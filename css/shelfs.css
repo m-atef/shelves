@@ -28,7 +28,7 @@
 }
 .roll-camera .move-camera {
   -webkit-transform-style: preserve-3d;
-  -webkit-transform: translateY(30px);
+  -webkit-transform: translateY(0px);
   -webkit-transition: all 3s ease-in-out;
 }
 
@@ -36,21 +36,21 @@ body.view-top-shelf .roll-camera {
   -webkit-animation: zoom-roll-top 3s ease-in-out;
 }
 body.view-top-shelf .roll-camera .move-camera {
-  -webkit-transform: translateY(30px);
+  -webkit-transform: translateY(0px);
 }
 
 body.view-middle-shelf .roll-camera {
   -webkit-animation: zoom-roll-middle 3s ease-in-out;
 }
 body.view-middle-shelf .roll-camera .move-camera {
-  -webkit-transform: translateY(-150px);
+  -webkit-transform: translateY(-200px);
 }
 
 body.view-bottom-shelf .roll-camera {
   -webkit-animation: zoom-roll-bottom 3s ease-in-out;
 }
 body.view-bottom-shelf .roll-camera .move-camera {
-  -webkit-transform: translateY(-330px);
+  -webkit-transform: translateY(-400px);
 }
 
 .wallpaper {
@@ -72,19 +72,18 @@ body.view-bottom-shelf .roll-camera .move-camera {
   margin-left:-325px;
   -webkit-transform-style:  preserve-3d;
   -webkit-backface-visibility:  hidden;
-  -webkit-transform:  rotateY(90deg) rotateX(90deg) translateX(199px);
+  -webkit-transform: rotateY(90deg) rotateX(90deg) translateX(199px);
 }
 .shelf.top {
-  top: 350px;
+  top: 450px;
 }
 .shelf.middle {
-  top: 550px;
+  top: 650px;
 }
 .shelf.bottom {
-  top: 750px;
+  top: 850px;
 }
 .shelf .face {
-  /*overflow:hidden;*/
   position: absolute;
   top:0;
   left:0;
