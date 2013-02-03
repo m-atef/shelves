@@ -57,7 +57,8 @@ body.view-bottom-shelf .roll-camera .move-camera {
   width: 200%;
   height: 2000px;
   margin-left:-50%;
-  background-image: -webkit-linear-gradient(-55deg, #769a31 10%, #526b22 50%);
+  background-image: -webkit-linear-gradient(-40deg, #769a31 10%, #526b22 50%);
+  /*background-image: -webkit-linear-gradient(-40deg, red 10%, blue 50%);*/
 }
 .wallpaper:before {
   content:"";
@@ -152,6 +153,8 @@ body.view-bottom-shelf .roll-camera .move-camera {
 }
 
 .shelf .ball-scene {
-  -webkit-transform: translate3d(0px, 25px, 75px) rotateY(90deg);
+  /*overflow: hidden;*/
+  /*display:none;*/
+  -webkit-transform: translate3d(-20px, 25px, 65px) scale3d(0.75, 0.75, 0.75) rotateY(90deg);
 }
 
