@@ -58,5 +58,10 @@ div.header ul.nav li a {
   -webkit-perspective-origin: 50% 50%;
   -webkit-backface-visibility:  hidden;
   -webkit-transform-style:  preserve-3d;
+
+  -moz-perspective: 1500px;
+  -moz-perspective-origin: 50% 50%;
+  -moz-backface-visibility:  hidden;
+  -moz-transform-style:  preserve-3d;
 }
 
