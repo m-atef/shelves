@@ -82,11 +82,17 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
   <script type="text/javascript">
     $(function(){
-      var topShelfPosition = $('body').height()/2;
 
-      $('.shelf.top').css('top', topShelfPosition);
-      $('.shelf.middle').css('top', topShelfPosition + 200);
-      $('.shelf.bottom').css('top', topShelfPosition + 400);
+      function alignShelfs(){
+        var topShelfPosition = $('body').height()/2;
+
+        $('.shelf.top').css('top', topShelfPosition);
+        $('.shelf.middle').css('top', topShelfPosition + 200);
+        $('.shelf.bottom').css('top', topShelfPosition + 400);
+      };
+
+      alignShelfs();
+      $(window).on('resize', alignShelfs);
 
       $('.nav a').on('click', function(e){
         e.preventDefault();
