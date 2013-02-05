@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/site.css">
   <link rel="stylesheet" href="../css/shelfs.css">
-  <link rel="stylesheet" href="../lab/css/ball.css">
   <link href='http://fonts.googleapis.com/css?family=Englebert' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -92,30 +91,6 @@
 
   </div>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-  <script type="text/javascript">
-    $(function(){
-
-      function alignShelfs(){
-        var topShelfPosition = $('body').height()/2;
-
-        $('.shelf.top').css('top', topShelfPosition);
-        $('.shelf.middle').css('top', topShelfPosition + 200);
-        $('.shelf.bottom').css('top', topShelfPosition + 400);
-      };
-
-      alignShelfs();
-      $(window).on('resize', alignShelfs);
-
-      $('.nav a').on('click', function(e){
-        e.preventDefault();
-
-        $('body').removeClass('view-top-shelf');
-        $('body').removeClass('view-middle-shelf');
-        $('body').removeClass('view-bottom-shelf');
-
-        $('body').addClass(e.target.id);
-      });
-    });
-  </script>
+  <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>
