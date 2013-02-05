@@ -161,8 +161,10 @@ body.view-bottom-shelf .roll-camera .move-camera {
 .shelf .left {
   width: 20px;
   height: 700px;
+  background: -webkit-linear-gradient(-90deg, #fff7eb 25%, #e5e2dd 100%);
   -webkit-transform: translateX(25px) translateY(-350px) rotateY(-90deg) translateZ(0);
 
+  background: -moz-linear-gradient(-90deg, #fff7eb 25%, #e5e2dd 100%);
   -moz-transform: translateX(25px) translateY(-350px) rotateY(-90deg) translateZ(0);
 }
 .shelf .top {
