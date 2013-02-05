@@ -9,11 +9,10 @@
 </head>
 <body>
   <div class="header">
-    <h1>Peter Westendorp</h1>
     <ul class="nav">
-      <li><a href="/" id="lab">Lab</a></li>
-      <li><a href="/" id="blog">Blog</a></li>
-      <li><a href="/" id="about">About</a></li>
+      <li><a href="/" id="view-top-shelf">Shelf 1</a></li>
+      <li><a href="/" id="view-middle-shelf">Shelf 2</a></li>
+      <li><a href="/" id="view-bottom-shelf">Shelf 3</a></li>
     </ul>
   </div>
   <div class="scene">
@@ -26,26 +25,15 @@
             <div class="face top"></div>
             <div class="face front">
 
-              <!-- ball -->
-              <a class="ball-scene" href="http://codepen.io/peterwestendorp/pen/wGECk" target="_blank">
-                <div class="ball-wrapper">
-                  <ul class="ball">
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                    <li class="ring"></li>
-                  </ul>
-                </div>
+              <a href="#" data-img-url="../photos/1.jpg" class="photocard">
+                <img src="../photos/1.jpg" alt="">
               </a>
-              <!-- /ball -->
+              <a href="#" class="photocard">
+                <img src="../photos/2.jpg" alt="">
+              </a>
+              <a href="#" class="photocard">
+                <img src="../photos/3.jpg" alt="">
+              </a>
 
             </div>
             <div class="face back"></div>
@@ -57,7 +45,19 @@
           <!-- shelf -->
           <div class="shelf middle">
             <div class="face top"></div>
-            <div class="face front"></div>
+            <div class="face front">
+
+              <a href="#" class="photocard">
+                <img src="../photos/4.jpg" alt="">
+              </a>
+              <a href="#" class="photocard">
+                <img src="../photos/5.jpg" alt="">
+              </a>
+              <a href="#" class="photocard">
+                <img src="../photos/6.jpg" alt="">
+              </a>
+
+            </div>
             <div class="face back"></div>
             <div class="face left"></div>
             <div class="face bottom"></div>
@@ -67,7 +67,19 @@
           <!-- shelf -->
           <div class="shelf bottom">
             <div class="face top"></div>
-            <div class="face front"></div>
+            <div class="face front">
+
+              <a href="#" class="photocard">
+                <img src="../photos/7.jpg" alt="">
+              </a>
+              <a href="#" class="photocard">
+                <img src="../photos/8.jpg" alt="">
+              </a>
+              <a href="#" class="photocard">
+                <img src="../photos/9.jpg" alt="">
+              </a>
+
+            </div>
             <div class="face back"></div>
             <div class="face left"></div>
             <div class="face bottom"></div>
@@ -101,15 +113,7 @@
         $('body').removeClass('view-middle-shelf');
         $('body').removeClass('view-bottom-shelf');
 
-        if(e.target.id === 'lab'){
-          $('body').addClass('view-top-shelf');
-        }
-        else if(e.target.id === 'blog'){
-          $('body').addClass('view-middle-shelf');
-        }
-        else if(e.target.id === 'about'){
-          $('body').addClass('view-bottom-shelf');
-        }
+        $('body').addClass(e.target.id);
       });
     });
   </script>

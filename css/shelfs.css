@@ -224,4 +224,56 @@ body.view-bottom-shelf .roll-camera .move-camera {
 
   -moz-transform: translate3d(-20px, 25px, 65px) scale3d(0.75, 0.75, 0.75) rotateY(90deg);
 }
+.shelf .photocard {
+  position: relative;
+  display:block;
+  width: 150px;
+  -webkit-transition: all 0.5s;
+  -webkit-transform-style:  preserve-3d;
+  -webkit-transform:        rotateX(-90deg)
+                            rotateY(90deg)
+                            translateY(-50px)
+                            translateZ(-25px);
+
+  -moz-transition: all 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transform:       rotateX(-90deg)
+                        rotateY(90deg)
+                        translateY(-50px)
+                        translateZ(-25px);
+}
+.shelf .photocard:after {
+  content:"";
+  position: absolute;
+  bottom:0;
+  right:0;
+  display:block;
+  width: 100px;
+  height:1px;
+  box-shadow: 0 30px 30px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform:  rotateX(90deg)
+                      rotateY(0deg)
+                      translateX(-25px)
+                      translateY(-10px)
+                      skew(-45deg);
+
+  -moz-transform:     rotateX(90deg)
+                      rotateY(0deg)
+                      translateX(-25px)
+                      translateY(-10px)
+                      skew(-45deg);
+}
+.shelf .photocard:nth-child(1n) {
+  top:75px;
+}
+.shelf .photocard:nth-child(2n){
+  top:200px;
+}
+.shelf .photocard:nth-child(3n){
+  top: 325px;
+}
+.shelf .photocard img {
+  width:150px;
+  outline: 1px solid transparent; /* triggers anti-anliasing in FF */
+}
 
