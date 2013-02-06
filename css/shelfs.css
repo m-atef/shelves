@@ -101,9 +101,9 @@ body.view-bottom-shelf .roll-camera .move-camera {
   width: 200%;
   height: 2000px;
   margin-left:-50%;
-  background-image: -webkit-linear-gradient(-40deg, #769a31 10%, #526b22 50%);
+  background-image: -webkit-linear-gradient(-40deg, #769a31 10%, #526b22 25%);
 
-  background-image: -moz-linear-gradient(-40deg, #769a31 10%, #526b22 50%);
+  background-image: -moz-linear-gradient(-40deg, #769a31 10%, #526b22 25%);
   /*background-image: -webkit-linear-gradient(-40deg, red 10%, blue 50%);*/
 }
 .wallpaper:before {
@@ -113,6 +113,7 @@ body.view-bottom-shelf .roll-camera .move-camera {
   height:100%;
   background: url('../images/white_wall.png');
 }
+
 .shelf {
   position: absolute;
   left:50%;
