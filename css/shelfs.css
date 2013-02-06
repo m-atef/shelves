@@ -234,16 +234,16 @@ body.view-bottom-shelf .roll-camera .move-camera {
   -webkit-transition: all 0.5s;
   -webkit-transform-style:  preserve-3d;
   -webkit-transform:        rotateX(-90deg)
-                            rotateY(90deg)
+                            rotateY(270deg)
                             translateY(-50px)
-                            translateZ(-25px);
+                            translateZ(25px);
 
   -moz-transition: all 0.5s;
   -moz-transform-style: preserve-3d;
   -moz-transform:       rotateX(-90deg)
-                        rotateY(90deg)
+                        rotateY(270deg)
                         translateY(-50px)
-                        translateZ(-25px);
+                        translateZ(25px);
 }
 .shelf .photocard:after {
   content:"";
@@ -255,15 +255,15 @@ body.view-bottom-shelf .roll-camera .move-camera {
   height:1px;
   box-shadow: 0 30px 30px 20px rgba(0, 0, 0, 0.5);
   -webkit-transform:  rotateX(90deg)
-                      rotateY(0deg)
-                      translateX(-25px)
-                      translateY(-10px)
+                      rotateZ(180deg)
+                      translateX(25px)
+                      translateY(-15px)
                       skew(-45deg);
 
   -moz-transform:     rotateX(90deg)
-                      rotateY(0deg)
-                      translateX(-25px)
-                      translateY(-10px)
+                      rotateZ(180deg)
+                      translateX(25px)
+                      translateY(-15px)
                       skew(-45deg);
 }
 .shelf .photocard:nth-child(1n) {
